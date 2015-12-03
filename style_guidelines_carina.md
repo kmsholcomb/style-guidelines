@@ -68,7 +68,7 @@ Observe the following guidelines when creating blocks of code as input or output
 
 The following examples illustrates many many of these guidelines:
 
-### Create a VM running a Docker host
+#### Create a VM running a Docker host
 1. Show all the available virtual machines (VMs) that are running Docker.
 
     `$ docker-machine ls`
@@ -166,7 +166,7 @@ When you are providing instructions to users, you should generally number the st
 
 - If more than one method exists for completing an action, document only one method, usually the most efficient or preferred method.
 
-### Create a cluster
+#### Create a cluster
 
 1. Log in to the [Carina Control Panel](https://app.getcarina.com/?_ga=1.19747704.1992129593.1447799312).
 
@@ -182,7 +182,7 @@ When you are providing instructions to users, you should generally number the st
 
     After a few moments, your cluster reaches a status of **active**.
 
-## Clarify pronouns such as *it*, *this*, *there*, and *that*
+## <a name="clarify-pronouns"></a>Clarify pronouns such as *it*, *this*, *there*, and *that*
 
 Pronouns are useful, but you must ensure that their antecedents (the words that they are used in place of) are clear, and that they (the pronouns) don’t contribute to vagueness and ambiguity. 
 
