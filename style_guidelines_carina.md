@@ -11,6 +11,7 @@ Follow these style guidelines when writing content:
 - [Write clear and consistent step text](#write-clear-and-consistent-step-text)
 - [Clarify pronouns such as *it*, *this*, *there*, and *that*](#clarify-pronouns)
 - [Clarify gerunds and participles](#clarify-gerunds-and-participles)
+- [Use consistent terminology](#use-consistent-terminology)
 
 ## Use sentence-style capitalization for titles and headings
 
@@ -197,3 +198,28 @@ Pronouns are useful, but you must ensure that their antecedents (the words that 
 ## Clarify gerunds and participles
 
 Participles are verbs that end in *-ed* or *-ing* and act as modifiers. Gerunds are verbs that end in *-ing* and act as nouns. Both types of words are useful and acceptable, but confusion can arise if they are not placed precisely in a sentence. For example, the word *meeting* can be a gerund or a modifier (or even a noun) depending on its placement in a sentence. Clarify gerunds and participles as necessary.
+
+## Use consistent terminology
+
+Use words as they are defined in a general dictionary, in an accepted industry dictionary or style guide, or for your particular project. Each word or phrase should have only one meaning, and should be used consistently throughout the documentation. 
+
+- Don't use the same word to describe two or more different concepts. For example, don't use *agent* to refer to both a person and a process.
+
+- If a word has both a technical meaning and a general meaning, don't use it to express both meanings. Instead, use a synonym for the general meaning. For example, use *interface* as a noun that means user interface. Instead of also using *interface* as a verb, use *interact*. 
+
+- Don't use different words to mean the same thing. Standardize on the use of one word for a particular object. Technical writing is not creative writing, and you should not be concerned that you will bore customers with colorless prose. Clarity is the goal, so using a precise set  of terms consistently is required. Following is a common example of multiple terms that refer to the same thing: 
+  - menu command *(the preferred term)* 
+  - menu item 
+  - menu option
+ 
+- Use a word as only one part of speech. Many words can be correctly used as a verb and as a noun or an adjective, such as *display*. However, using the same word as more than one part of speech in the same document can be confusing to customers and translators, so avoid it when possible. 
+
+- Avoid fabricated words. Examples of fabricated words are *marketecture* or *edutainment*. Most such words are specific to a single business culture and are not understood in other cultures. 
+
+- Standardize words and spelling across a documentation set.
+ 
+- Don't  use terms with different meanings interchangeably. Some terms have similar but distinct meanings and should not be used interchangeably. For example:
+  - environment, platform
+  - version, release
+  - panel, screen
+  - window, dialog box
