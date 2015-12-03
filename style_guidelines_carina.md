@@ -2,19 +2,26 @@
 
 Follow these style guidelines when writing content:
 
+- [Use sentence-style capitalization for titles and headings](#use-sentence-style-capitalization-for-titles-and-headings)
+- [Use consistent text formatting](#use-consistent-text-formatting)
+- [Write clear and consistent code examples](#write-clear-and-consistent-code-examples)
+- [Use active voice](#use-active-voice)
+- [Use present tense](#use-present-tense)
+- [Write to the user by using second person and imperative mood](#write-to-the-user-by-using-second-person-and-imperative-mood)
+- [Write clear and consistent step text](#write-clear-and-consistent-step-text)
+- [Clarify pronouns such as *it*, *this*, *there*, and *that*](#clarify-pronouns)
+- [Clarify gerunds and participles](#clarify-gerunds-and-participles)
+
 ## Use sentence-style capitalization for titles and headings
 
-In sentence-style capitalization, you capitalize only the first word of the title or heading, plus any proper nouns, proper adjectives, and terms that are always capitalized, such as some acronyms and abbreviations. If the title includes a colon, capitalize the first word that follows the colon, regardless of its part of speech. 
+Use sentence-style capitalization for all titles and headings. In sentence-style capitalization, you capitalize only the first word of the title or heading, plus any proper nouns, proper adjectives, and terms that are always capitalized, such as some acronyms and abbreviations. If the title includes a colon, capitalize the first word that follows the colon, regardless of its part of speech. 
 
-If the heading includes text from a user interface, the capitalization of that text must match the capitalization on the interface.
- 
 Following are some examples: 
 
 - Preparing a cloud server to be a mail server
 - Install or upgrade PHP 5.3 for CentOS 5.x
 - Ubuntu Hardy: Using mod_python to serve your application
 - PHP configuration limits for Cloud Sites
-- Install your own PEAR module
 - Troubleshooting a Vyatta site-to-site VPN connection
 - Differences between IMAP and POP
 
@@ -22,7 +29,7 @@ Following are some examples:
 
 Certain text should be formatted differently from the surrounding text to designate a special meaning or to make the text stand out to the user. Usually this formatting is accomplished by applying a different font treatment (such as bold, italics, or monospace). 
 
-- For text you want to emphasize, use italics. Example: Offset _must_ be a multiple of the limit (or zero)
+- For text you want to emphasize, use italics. Example: The offset _must_ be a multiple of the limit (or zero).
 
 - For error messages, use monospace. Example: `The user does not have permission to perform this action.`
 
@@ -43,7 +50,7 @@ Additionally, format placeholder text as follows:
 
 Observe the following guidelines when creating blocks of code as input or output examples:
 
-- Do not use screenshots to show code examples. Format them as blocks of code by using the appropriate markup in your authoring tool.
+- Do not use screenshots to show code examples. Format them as blocks of code, in monospace, by using the appropriate markup in your authoring tool. 
  
 - When showing input, include a command prompt (such as $).
  
@@ -51,7 +58,7 @@ Observe the following guidelines when creating blocks of code as input or output
 
 - When the command is simple, and there is nothing specific to say about the output, you can show the input and output in the same code block, as the user would actually see the code in their own terminal. The inclusion of the command prompt will differentiate the input from the output.
  
-- Ensure that any placeholder text in code is obvious. If the authoring tool allows it, apply italics to placeholders; if not, enclose them in angle brackets.
+- Ensure that any placeholder text in code is obvious. If the authoring tool allows it, apply italics to placeholders; if not, enclose them in angle brackets. Show all placeholder text in camelCase.
  
 - Follow the conventions of the programming language used and preserve the capitalization that the author of the code used.
  
@@ -76,23 +83,23 @@ The following examples illustrates many many of these guidelines:
 
     The `--driver` flag indicates what type of driver the machine will run on. In this case, `virtualbox` indicates that the driver is Oracle VirtualBox. The final argument in the command gives the VM a name, in this case, `test`.
 
-	The output should as follows:
+    The output should as follows:
 
     ```
     Creating VirtualBox VM...
     Creating SSH key...
     Starting VirtualBox VM...
     Starting VM...
-	To see how to connect Docker to this machine, run: docker-machine env test
+    To see how to connect Docker to this machine, run: docker-machine env test
     ```
 
 3. Run `docker-machine ls` again to see the VM that you created.
 
     The output should look as follows:
 
-	```    
-	NAME             ACTIVE   DRIVER       STATE     URL                         SWARM
-    test                      virtualbox   Running   tcp://192.168.99.101:237]]>
+    ```    
+    NAME             ACTIVE   DRIVER       STATE     URL                         SWARM
+    test                      virtualbox   Running   tcp://192.168.99.101:237
     ```
 
 ## Use active voice
@@ -110,12 +117,6 @@ Following are examples of active voice:
 - Click **OK** to save the configuration.                           
 - Create a server.                                              
 - Rackspace products and services solve your business problems. 
-
-However, passive voice is acceptable in the following situations:
-
-- Using active voice sounds like you are blaming the user. For example, you can use passive voice in an error message or troubleshooting content when the active subject is the user.  
-- The agent of action is unknown, or you want to de-emphasize the agent of action and emphasize the object on which the action is performed. 
-- Recasting the sentence in active voice is wordy or awkward.
 
 ## Use present tense
 
@@ -139,27 +140,25 @@ Using second person also avoids the use of gender-specific, third-person pronoun
  
 Use first person plural pronouns (*we*, *our*) judiciously. These pronouns emphasize the writer or Rackspace rather than the user, so before you use them, consider whether second person or imperative mood is more "user friendly." However, use *we recommend* rather than *it is recommended* or *Rackspace recommends*. Also, you can use *we* in the place of *Rackspace* if necessary.
 
-**Note:** Don't use first person to avoid naming the product or to avoid using passive voice. If the product is performing the action, use third person (the product as actor). If you want to de-emphasize the agent of action and emphasize the object on which the action is performed, use passive voice.
-
 The first-person singular pronoun *I* is acceptable in the question part of FAQs and when authors of blogs or signed articles are describing their own actions or opinions. 
 
-Avoid switching person (point of view) in the same document. 
+Avoid switching person (point of view) in the same document. Switching person is acceptable, however, in blog posts that use first-person singular but then switch to second person for instructional steps. 
 
 ## Write clear and consistent step text
 
 When you are providing instructions to users, you should generally number the steps (unless you have just one step). For the steps, use the following guidelines. The guidelines are followed by an example:
 
-- Write each step as a complete and correctly punctuated imperative sentence (that is, a sentence that starts with an imperative verb). In steps, the focus is on the user, and the voice is active.
+- Write each step as a complete imperative sentence (that is, a sentence that starts with an imperative verb) and use ending punctuation. In steps, the focus is on the user, and the voice is active.
 
 - Usually, include only a single action in each step. If two actions are closely related, such as opening a menu and selecting a command from the menu, you can include both actions in one step. 
 
 - If a step specifies where to perform an action, state where to perform the action before describing the action. 
 
-- Likewise, if a step specifies a situation or a condition, state the situation or condition before describing the action.
+- If a step specifies a situation or a condition, state the situation or condition before describing the action.
 
-- Do not include explanatory or reference information in the action part of a step. If needed, follow the step with one or more paragraphs that provide supplemental information.
+- Do *not* include explanatory or reference information in the action part of a step. If needed, follow the step with one or more paragraphs that provide such information.
 
-- Do not document system actions, responses, or results as steps. Put necessary statements in paragraphs following the steps to which they apply.
+- Do *not* document system actions, responses, or results as steps. Put necessary statements in paragraphs following the steps to which they apply.
 
 - Use screenshots sparingly. Screenshots can help to orient the user, but a screenshot of every field or dialog box is usually not necessary.
 
@@ -195,6 +194,6 @@ Pronouns are useful, but you must ensure that their antecedents (the words that 
 
 - **That**: Avoid using *that* as a demonstrative pronoun (which stands in for or points to a noun). Instead, use it as an adjective and follow it with a noun. 
 
-## Clarify gerunds and participles (verbs ending in *-ing* and *-ed*)
+## Clarify gerunds and participles
 
-Participles are verbs that end in *-ed* or *-ing* and act as modifiers. Gerunds are verbs that end in *-ing* and act as nouns. Both types of words are useful and acceptable, but confusion can arise if they are not placed precisely in a sentence. For example, the word *meeting* can be a gerund or a modifier (or even a noun) depending on its placement in a sentence. Clarify gerunds and participles as necessary. 
+Participles are verbs that end in *-ed* or *-ing* and act as modifiers. Gerunds are verbs that end in *-ing* and act as nouns. Both types of words are useful and acceptable, but confusion can arise if they are not placed precisely in a sentence. For example, the word *meeting* can be a gerund or a modifier (or even a noun) depending on its placement in a sentence. Clarify gerunds and participles as necessary.
